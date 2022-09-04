@@ -5,16 +5,16 @@ pragma solidity 0.8.13;
 
 contract Store {
     uint256 invoiceId;
-    struct invoice {
+    struct Invoice {
         uint256 amount;
         bool paid;
     }
-    mapping(uint256 => invoice) invoices;
+    mapping(uint256 => Invoice) invoices;
 
     event InvoiceCreated(uint256 indexed id, uint256 amount);
     event InvoicePaid(uint256 indexed id);
 
-    // maybe declare store name
+    // todo: declare store id and owner
     // constructor() {}
 
     // todo: create invoice
