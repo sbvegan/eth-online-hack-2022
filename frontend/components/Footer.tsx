@@ -5,7 +5,10 @@ const Footer: FC = () => {
     return (
         <footer className="footer">
             <Link href="https://github.com/sbvegan/eth-online-hack-2022">
-                Github
+                Github {"<"}
+            </Link>
+            <Link href="https://online.ethglobal.com/">
+                {">"} ETHOnline 2022
             </Link>
         </footer>
     )
